@@ -3,36 +3,68 @@
 <head>
 
 <!-- meta tags, links to css, etc. -->
-<title>Davidson GPA Calcualtor</title>
+<title> Davidson GPA Calcualtor </title>
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color:pink;">
+<img src="https://logos-world.net/wp-content/uploads/2020/06/Davidson-Wildcats-emblem.jpg" alt="Wildcats Logo" width="400" height="400" style: margin-right= "0">
 
 <div class="container">
 <!-- visible content goes here -->
 <h1>Davidson Student GPA calculator</h1>
-<h2>Welcome to the Davidson GPA calculator, fill ou tthe form below to see your predicted GPA for this semester</h2>
+<h2>Welcome to the Davidson GPA calculator, fill out the form below to see your predicted GPA for this semester. </h2>
 
 <form>
   <label for"fname"> Name:</label>
   <input type="text" name="fname" id="fname">
   <br>
-  <label for"numClass">How many ?</label>
-  <input type="number" value = 4 name="numClass" id="numClass">
+  <label for"numClass">How many classes are you taking?</label>
+  <input type="number" placeholder="4" name="numClass" id="numClass">
   <br>
-  <label for"numstudy">How many hours per week do you spend studying?</label>
-  <input type="number" value = 12 name="numstudy" id="numstudy">
+  <p> For class credits, we are using a system generally used by other schools.
+    Enter 3 credits for a class if it is humanities. Enter 4 credits for a classes
+    if it is a STEM. Enter 5 credits for a class if it includes a lab.
+  </p>
+
+  <label for"numstudy"> Class 1: How many credits is the class? </label>
+  <input type="number" placeholder="4" name="numstudy" id="Class1">
   <br>
-  <label for"fname">How many classes are you enrolled in ?</label>
-  <input type="number" value = 12 name="numstudy" id="numstudy">
+
+  <label for"numstudy"> Class 2: How many credits is the class? </label>
+  <input type="number" placeholder="4" name="numstudy" id="Class2">
   <br>
-  <label for"fname">How many hours per week do you spend studying?</label>
-  <input type="number" value = 12 name="numstudy" id="numstudy">
+
+  <label for"numstudy"> Class 3: How many credits is the class? </label>
+  <input type="number" placeholder="4" name="numstudy" id="Class3">
   <br>
-  <label for"fname">How many hours per week do you spend studying?</label>
-  <input type="number" value = 12 name="numstudy" id="numstudy">
+  <label for"numstudy"> Class 4: How many credits is the class? </label>
+  <input type="number" placeholder="4" name="numstudy" id="Class4">
   <br>
+  <label for"numstudy"> Class 5: How many credits is the class? </label>
+  <input type="number" placeholder="4" name="numstudy" id="Class5">
+  <br>
+  <label for"numstudy">What is the average amount of hours per class per week you
+    spend studying or learning? Please include class time. </label>
+  <input type="number" placeholder="8" name="numstudy" id="HoursStudying">
+  <br>
+
+  <label for"numstudy"> On a scale of 1 - 10, how proficient do you think you
+    are at studying? Consider how smart you study, office hours usage, etc. </label>
+  <input type="number" placeholder="6" name="numstudy" id="StudyingProficiency">
+  <br>
+  <label for"numstudy">On a scale of 1-10, please rate you health and wellness.
+  Please take into consideration your sleep schedule, how much rest you get,
+your diet and exercise, sickness, and anything that would impact your
+ability to perfom well at Davidson. </label>
+  <input type="number" placeholder="6" name="numstudy" id="Wellness">
+  <br>
+  <label for"numstudy"> How many hours per week do you spend on outside
+  commitments? </label>
+  <input type="number" placeholder="6"  name="numstudy" id="Wellness">
+  <br>
+
+
 
 
   <button type = "submit" class="btn btn-primary submit">Button</button>
