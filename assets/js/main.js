@@ -4,8 +4,21 @@
 // callback funciton goes in click
 
 document.getElementById('submit').onclick= function(e){
+  var classes = document.getElementById('fname').value;
   var name = document.getElementById('fname').value;
-  console.log(form)
+  var name = document.getElementById('fname').value;
+
+
+
+
+
+
+
+  var name = document.getElementById('fname').value;
+  console.log(form);
+
+
+
   e.preventDefault();
 
 
