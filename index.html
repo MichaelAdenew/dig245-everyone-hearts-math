@@ -21,11 +21,11 @@
 <form id ="gpaCalc" action = "#">
   <label for"fname"> Name:</label>
   <br>
-  <input type="text" name="fname" id="fname">
+  <input type="text" name="fname" id="fname" required>
   <br>
   <label for"numClass">How many classes are you taking?</label>
   <br>
-  <input type="number" placeholder="4" name="numClass" id="numClass">
+  <input type="number" placeholder="4" name="numClass" max = 5 id="numClass" required>
 
   <br>
   <br>
@@ -34,56 +34,55 @@
     if it is a STEM. Enter 5 credits for a class if it includes a lab.
   </p>
 
-  <label for"numstudy"> Class 1: How many credits is the class? </label>
+  <label for "numstudy"> Class 1: How many credits is the class? </label>
   <br>
-  <input type="number" placeholder="4" name="numstudy" id="Class1">
-  <br>
-
-  <label for"numstudy"> Class 2: How many credits is the class? </label>
-  <br>
-  <input type="number" placeholder="4" name="numstudy" id="Class2">
+  <input type="number" placeholder="4" name="numstudy" min=1 max = 5 id="Class1">
   <br>
 
-  <label for"numstudy"> Class 3: How many credits is the class? </label>
+  <label for "Class2"> Class 2: How many credits is the class? </label>
   <br>
-  <input type="number" placeholder="4" name="numstudy" id="Class3">
+  <input type="number" placeholder="4" name="numstudy" min=1 max = 5 id="Class2">
   <br>
-  <label for"numstudy"> Class 4: How many credits is the class? </label>
+
+  <label for "Class3"> Class 3: How many credits is the class? </label>
   <br>
-  <input type="number" placeholder="4" name="numstudy" id="Class4">
+  <input type="number" placeholder="4" name="numstudy" min=1 max = 5 id="Class3">
   <br>
-  <label for"numstudy"> Class 5: How many credits is the class? </label>
+  <label for "Class4"> Class 4: How many credits is the class? </label>
   <br>
-  <input type="number" placeholder="4" name="numstudy" id="Class5">
+  <input type="number" placeholder="4" name="numstudy" min=1 max = 5 id="Class4">
+  <br>
+  <label for "Class5"> Class 5: How many credits is the class? </label>
+  <br>
+  <input type="number" placeholder="4" name="numstudy"  min=1 max = 5 id="Class5">
 
   <br>
   <br>
-  <label for"numstudy">What is the average amount of hours per class per week you
+  <label for "HoursStudying">What is the average amount of hours per class per week you
     spend studying or learning? Please include class time. </label>
     <br>
   <input type="number" placeholder="8" name="numstudy" id="HoursStudying">
   <br>
 
-  <label for"numstudy"> On a scale of 1 - 10, how proficient do you think you
+  <label for "StudyingProficiency"> On a scale of 1 - 10, how proficient do you think you
     are at studying? Consider how smart you study, office hours usage, etc. </label>
     <br>
-  <input type="number" placeholder="6" name="numstudy" id="StudyingProficiency">
+  <input type="range" placeholder="6" name="numstudy" min = 0 max = 10 id="StudyingProficiency">
   <br>
-  <label for"numstudy">On a scale of 1-10, please rate you health and wellness.
+  <label for "Wellness">On a scale of 1-10, please rate you health and wellness.
   Please take into consideration your sleep schedule, how much rest you get,
 your diet and exercise, sickness, and anything that would impact your
 ability to perfom well at Davidson. </label>
-  <input type="number" placeholder="6" name="numstudy" id="Wellness">
+  <input type="range" placeholder=3 name="numstudy" min = 0 max = 10 id="Wellness">
   <br>
-  <label for"numstudy"> How many hours per week do you spend on outside
+  <label for "otherAct"> How many hours per week do you spend on outside
   commitments? </label>
   <br>
-  <input type="number" placeholder="6"  name="numstudy" id="Wellness">
+  <input type="number" placeholder="6"  name="numstudy" id="otherAct">
   <br>
 
 <br>
   <button type = "submit" id= "submit"  class="btn btn-primary submit">Get Estimated GPA</button>
-
   <button type = "reset" id= "reset" style = "margin-left: 30px" class="btn btn-primary submit">Reset Calculator</button>
 </form>
 <br>
