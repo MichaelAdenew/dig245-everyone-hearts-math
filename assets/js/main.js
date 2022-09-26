@@ -3,9 +3,19 @@
 // $("h1").hide();
 // callback funciton goes in click
 
-var username = document.getElementById("fname").value;
-console.log("value:", username);
+document.getElementById('submit').onclick= function(e){
+  var name = document.getElementById('fname').value;
+  console.log(form)
+  e.preventDefault();
 
+
+
+
+
+
+
+
+}
 
 //   let str = "";
 //   if (requiredUsername == username){
